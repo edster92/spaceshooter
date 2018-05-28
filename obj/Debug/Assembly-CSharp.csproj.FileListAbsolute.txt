@@ -1,0 +1,124 @@
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.DataContract.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.xml
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.dll
+D:\Dropbox (RinGames)\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.pdb
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.dll
+C:\Users\edste\Dropbox\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.pdb
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.dll
+C:\Users\edste\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.pdb
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.DataContract.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEditor.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\nunit.framework.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\Temp\bin\Debug\UnityEngine.VR.xml
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.dll
+C:\Dropbox (RinGames)\RinGames Nordcurrent FW\Эдик\my project\City shooter\obj\Debug\Assembly-CSharp.pdb
