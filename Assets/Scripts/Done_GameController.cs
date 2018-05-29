@@ -45,19 +45,8 @@ public class Done_GameController : MonoBehaviour
 	
 	void Start ()
 	{
-		gameOver = false;
-		restart = false;
-		restartText.text = "";
-		restartText.color = Color.clear;
-		gameOverText.color = Color.clear;
-		gameOverText.text = "";
 
-		score = 0;
-		UpdateScore ();
 
-		StartCoroutine (SpawnWaves ());
-        StartCoroutine(SpawnBonus());
-		StartCoroutine (SpawnBomb ());
         GOparant = new GameObject("GOparant").transform;
 
 		if (Screen.height > Screen.width) 
@@ -68,6 +57,7 @@ public class Done_GameController : MonoBehaviour
 		}
 
 	}
+
     void Awake ()
     {
         Done_GameController.Instance = this;
@@ -90,6 +80,24 @@ public class Done_GameController : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 			}
 		}
+	}
+
+	public void StartGame ()
+	{
+		Player.gameObject.SetActive (true);
+		StartCoroutine (SpawnWaves ());
+		StartCoroutine(SpawnBonus());
+		StartCoroutine (SpawnBomb ());
+
+		gameOver = false;
+		restart = false;
+		restartText.text = "";
+		restartText.color = Color.clear;
+		gameOverText.color = Color.clear;
+		gameOverText.text = "";
+
+		score = 0;
+		UpdateScore ();
 	}
 
 

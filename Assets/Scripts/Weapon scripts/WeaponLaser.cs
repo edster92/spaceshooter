@@ -10,7 +10,6 @@ public class WeaponLaser : BaseWeapon
 	[SerializeField]
 	ParticleSystem impactParticle;
 
-
 	public override void FireStart ()
 	{
 
@@ -20,21 +19,21 @@ public class WeaponLaser : BaseWeapon
 
 	protected override IEnumerator Fire ()
 	{
-	//	Transform pos = levelAnchors [0].ShotAnchors[0]; 	
 		while (fireOn) {
 			RaycastHit hit;
-			if (Physics.Raycast (laserBeam.transform.position, laserBeam.transform.forward, out hit, 150)) 
+			if (Physics.Raycast (laserBeam.transform.position, laserBeam.transform.forward, out hit, 122)) 
 			{
 				laserBeam.SetPosition (1, (hit.point.z - laserBeam.transform.position.z) * Vector3.forward);
 				hit.collider.gameObject.GetComponent<BasedGameObjects> ().AddedGamage (damage [WeaponLevel - 1] * Time.deltaTime);
 				impactParticle.transform.position = laserBeam.transform.position + laserBeam.GetPosition (1);
-				if (!impactParticle.isPlaying)
-					impactParticle.Play (true);
+					if (!impactParticle.isPlaying)
+						impactParticle.Play (true);
 			} 
 			else 
 			{
-				laserBeam.SetPosition (1, 150 * Vector3.forward);
-				impactParticle.Stop ();
+				laserBeam.SetPosition (1, 122 * Vector3.forward);
+				if (impactParticle.isPlaying)
+					impactParticle.Stop ();
 			}
 			yield return null;
 		}
