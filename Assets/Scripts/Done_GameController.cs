@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Xml;
+using System.Xml.Serialization;
 
 public class Done_GameController : MonoBehaviour
 {
@@ -45,7 +47,12 @@ public class Done_GameController : MonoBehaviour
 	
 	void Start ()
 	{
-
+		gameOver = false;
+		restart = false;
+		restartText.text = "";
+		restartText.color = Color.clear;
+		gameOverText.color = Color.clear;
+		gameOverText.text = "";
 
         GOparant = new GameObject("GOparant").transform;
 
@@ -89,12 +96,7 @@ public class Done_GameController : MonoBehaviour
 		StartCoroutine(SpawnBonus());
 		StartCoroutine (SpawnBomb ());
 
-		gameOver = false;
-		restart = false;
-		restartText.text = "";
-		restartText.color = Color.clear;
-		gameOverText.color = Color.clear;
-		gameOverText.text = "";
+
 
 		score = 0;
 		UpdateScore ();
