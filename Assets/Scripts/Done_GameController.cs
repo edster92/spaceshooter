@@ -53,6 +53,9 @@ public class Done_GameController : MonoBehaviour
 		restartText.color = Color.clear;
 		gameOverText.color = Color.clear;
 		gameOverText.text = "";
+		score = 0;
+		UpdateScore ();
+	//	UpdateHealth ();
 
         GOparant = new GameObject("GOparant").transform;
 
@@ -95,11 +98,6 @@ public class Done_GameController : MonoBehaviour
 		StartCoroutine (SpawnWaves ());
 		StartCoroutine(SpawnBonus());
 		StartCoroutine (SpawnBomb ());
-
-
-
-		score = 0;
-		UpdateScore ();
 	}
 
 

@@ -9,6 +9,8 @@ public class WeaponLaser : BaseWeapon
 	LineRenderer laserBeam;
 	[SerializeField]
 	ParticleSystem impactParticle;
+	[SerializeField]
+	LayerMask layer;
 
 	public override void FireStart ()
 	{
@@ -21,7 +23,7 @@ public class WeaponLaser : BaseWeapon
 	{
 		while (fireOn) {
 			RaycastHit hit;
-			if (Physics.Raycast (laserBeam.transform.position, laserBeam.transform.forward, out hit, 122)) 
+			if (Physics.Raycast (laserBeam.transform.position, laserBeam.transform.forward, out hit, 122, layer)) 
 			{
 				laserBeam.SetPosition (1, (hit.point.z - laserBeam.transform.position.z) * Vector3.forward);
 				hit.collider.gameObject.GetComponent<BasedGameObjects> ().AddedGamage (damage [WeaponLevel - 1] * Time.deltaTime);
