@@ -214,4 +214,31 @@ public class Done_GameController : MonoBehaviour
 		}
 	}
 
+	public void SpawnEnemy ()
+	{
+		GameObject hazard = hazards[Random.Range(0, hazards.Length)];
+		Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+		Quaternion spawnRotation = Quaternion.identity;
+		Instantiate (hazard, spawnPosition, spawnRotation, GOparant);
+	}
+	public void SpawnLaser ()
+	{
+		GameObject bonus = bonuses[Random.Range(0, bonuses.Length)];
+		Vector3 bonuSpawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+		Quaternion bonusSpawnRotation = Quaternion.identity;
+		Instantiate(bonus, bonuSpawnPosition, bonusSpawnRotation, GOparant);
+	}
+	public void SpawnSS ()
+	{
+	}
+	public void SpawnMS ()
+	{
+	}
+	public void SpawnBombss ()
+	{
+		Vector3 bombSpawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+		Quaternion bombSpawnRotation = Quaternion.identity;
+		Instantiate (bomb, bombSpawnPosition, bombSpawnRotation, GOparant);
+	}
+
 }

@@ -35,9 +35,9 @@ public class PlayerController : BasedGameObjects
 
     void Update ()
     {
-		if (Input.GetMouseButtonDown (0))
+		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Space))
 			Weapon.FireStart ();
-		if (Input.GetMouseButtonUp (0))
+		if (Input.GetMouseButtonUp (0) || Input.GetKeyUp (KeyCode.Space))
 			Weapon.FireEnd ();
 		
 
