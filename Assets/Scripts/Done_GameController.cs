@@ -240,5 +240,8 @@ public class Done_GameController : MonoBehaviour
 		Quaternion bombSpawnRotation = Quaternion.identity;
 		Instantiate (bomb, bombSpawnPosition, bombSpawnRotation, GOparant);
 	}
-
+	public void QuiyGame ()
+	{
+		Application.Quit ();
+	}
 }
