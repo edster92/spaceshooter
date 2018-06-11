@@ -15,7 +15,7 @@ public class BaseWeapon : MonoBehaviour
 	[SerializeField]
 	protected WeaponsShotAnchors [] levelAnchors;
 	[SerializeField]
-	protected float [] damage;
+	public float [] damage;
 	public weaponTypes Type;
 	public enum weaponTypes 
 	{

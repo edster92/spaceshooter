@@ -56,6 +56,7 @@ public class Done_GameController : MonoBehaviour
 		score = 0;
 		UpdateScore ();
 	//	UpdateHealth ();
+		Player.gameObject.SetActive (false);
 
         GOparant = new GameObject("GOparant").transform;
 

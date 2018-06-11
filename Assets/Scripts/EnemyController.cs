@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : BasedGameObjects {
+	
     public GameObject EnemyExploisionPartickle;
 	public ParticleSystem EnemmyFallingPartickle;
     public int ScoreForEnemy = 1;
@@ -28,6 +29,8 @@ public class EnemyController : BasedGameObjects {
 	[SerializeField]
 	float randomDelay = 0;
 	float percentToFire = 0;
+	[SerializeField]
+	bool noEvasion = false;
 
 
     
@@ -53,14 +56,17 @@ public class EnemyController : BasedGameObjects {
 
 	public void EnemyFire ()
 	{
-		
+		if (enemyWeapon)
 		enemyWeapon.FireStart ();
 	}
 
     public override void Death()
     {
 		Done_GameController.Instance.AllDead -= Death;
-		SetStage (EnemyStages.Deth.ToString ());
+		if (!noEvasion)
+			SetStage (EnemyStages.Deth.ToString ());
+		else
+			DeathStageEnd ();
     }
 
     public override void Impact(BasedGameObjects objectImpact)
@@ -71,23 +77,27 @@ public class EnemyController : BasedGameObjects {
 
     public void EvasionStageStart ()
     {
-		float moveVectoreX;
-		startEvasionXPosition = transform.position.x;
-		if (startEvasionXPosition == 0)
-			moveVectoreX = -1;
-		else
-			moveVectoreX = Mathf.Sign (startEvasionXPosition) * -1;
-		endEvasionXposition = startEvasionXPosition + (Random.Range (evasionMinRange, evasionMaxRange) * moveVectoreX);
-		startAnimationTime = Time.time;
+		if (!noEvasion) {
+			float moveVectoreX;
+			startEvasionXPosition = transform.position.x;
+			if (startEvasionXPosition == 0)
+				moveVectoreX = -1;
+			else
+				moveVectoreX = Mathf.Sign (startEvasionXPosition) * -1;
+			endEvasionXposition = startEvasionXPosition + (Random.Range (evasionMinRange, evasionMaxRange) * moveVectoreX);
+			startAnimationTime = Time.time;
+		}
     }
 
 	public void EvasionStageUpdate ()
     {
-		Vector3 currentPosition = transform.position;
-		currentPosition.x = Mathf.Lerp (startEvasionXPosition, endEvasionXposition, evasionCurve.Evaluate (Mathf.InverseLerp (startAnimationTime, startAnimationTime + evasionTime, Time.time)));
-		transform.position = currentPosition;
-		if (Time.time >= startAnimationTime + evasionTime)
-			SetStage (EnemyStages.Idle.ToString ());
+		if (!noEvasion) {
+			Vector3 currentPosition = transform.position;
+			currentPosition.x = Mathf.Lerp (startEvasionXPosition, endEvasionXposition, evasionCurve.Evaluate (Mathf.InverseLerp (startAnimationTime, startAnimationTime + evasionTime, Time.time)));
+			transform.position = currentPosition;
+			if (Time.time >= startAnimationTime + evasionTime)
+				SetStage (EnemyStages.Idle.ToString ());
+		}
     }
 
 	public void EvasionStageEnd ()
@@ -97,52 +107,60 @@ public class EnemyController : BasedGameObjects {
 
 	public void IdleStageUpdate ()
 	{
-		percentToFire = Random.Range (0, 100);
-		if (percentToFire == 20f)
-			EnemyFire ();
-		else
-			enemyWeapon.FireEnd ();
+		if (!noEvasion) {
+			percentToFire = Random.Range (0, 100);
+			if (percentToFire == 20f)
+				EnemyFire ();
+			else
+				enemyWeapon.FireEnd ();
 		
 
-		if (transform.position.z < 35f && transform.position.z < 32f) 
-		{
-			enemyWeapon.WeaponLevel = 2;
-			percentToFire = 20f;
-		}
+			if (transform.position.z < 35f && transform.position.z < 32f) {
+				enemyWeapon.WeaponLevel = 2;
+				percentToFire = 20f;
+			}
 
-		if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Space)) 
-		{
+			if (Input.GetMouseButtonDown (0) || Input.GetKeyDown (KeyCode.Space)) {
 
-			float curentPercent = Random.Range (0, 100);
-			if (curentPercent <= chanceToEvasion)
-				SetStage (EnemyStages.Evasion.ToString ());
+				float curentPercent = Random.Range (0, 100);
+				if (curentPercent <= chanceToEvasion)
+					SetStage (EnemyStages.Evasion.ToString ());
+			}
 		}
 	}
 
 	public void DeathStageStart ()
 	{
-		FallPosition = transform.position;
-		var g =  gameObject;
-		startFallingYPosition = transform.position.y;
-		Done_GameController.Instance.AddScore(ScoreForEnemy);
-		GetComponent <CapsuleCollider> ().enabled = false;
-		EnemmyFallingPartickle.Play (true);
-		startAnimationTime = Time.time;
+		
+		if (!noEvasion) {
+			
+			FallPosition = transform.position;
+			var g = gameObject;
+			startFallingYPosition = transform.position.y;
+			GetComponent <CapsuleCollider> ().enabled = false;
+			if (EnemmyFallingPartickle)
+			EnemmyFallingPartickle.Play (true);
+			startAnimationTime = Time.time;
+		}
+		
 	}
 
 	public void DeathStageUpdate () 
 	{
-		Vector3 currentPosition = transform.position;
-		currentPosition.y = Mathf.Lerp (startFallingYPosition, endFallingYPostion, fallingCurve.Evaluate (Mathf.InverseLerp (startAnimationTime, startAnimationTime + fallingTime, Time.time)));
-		transform.position = currentPosition;
-		if (Time.time >= startAnimationTime + fallingTime)
-			Stop ();
-		transform.LookAt (FallPosition - currentPosition + transform.position);
-		FallPosition = transform.position;
+		if (!noEvasion) {
+			Vector3 currentPosition = transform.position;
+			currentPosition.y = Mathf.Lerp (startFallingYPosition, endFallingYPostion, fallingCurve.Evaluate (Mathf.InverseLerp (startAnimationTime, startAnimationTime + fallingTime, Time.time)));
+			transform.position = currentPosition;
+			if (Time.time >= startAnimationTime + fallingTime)
+				Stop ();
+			transform.LookAt (FallPosition - currentPosition + transform.position);
+			FallPosition = transform.position;
+		}
 	}
 
 	public void DeathStageEnd ()
 	{
+		Done_GameController.Instance.AddScore (ScoreForEnemy);
 		Instantiate(EnemyExploisionPartickle, transform.position, Quaternion.identity, transform.parent);
 		Destroy(gameObject);
 	}
