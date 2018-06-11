@@ -103,9 +103,10 @@ public class PlayerController : BasedGameObjects
     {
         ImmortalVisualParticle.Play(true);
 		while (Time.time < timeBeforKick) {
-			progressBar.CurrentValue = 0;
+			progressBar.CurrentValue = (timeBeforKick - Time.time) / immortalityTime;
 			yield return null;
 		}
+		progressBar.CurrentValue = 0;
         ImmortalVisualParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
 
     }
