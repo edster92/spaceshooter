@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : BasedGameObjects
 {
+
     public GameObject ExploisionPartickle;
     [SerializeField]
     float immortalTime;
@@ -15,6 +16,10 @@ public class PlayerController : BasedGameObjects
     private float mergeAnimationSpeed;
     public static PlayerController instance;
 	public BaseWeapon Weapon;
+	[SerializeField]
+	UIprogressBar progressBar;
+
+	float immortalityTime;
 
 	public override float HealthPoints
 	{
@@ -83,10 +88,13 @@ public class PlayerController : BasedGameObjects
     }
     public void AddImmoratl (float TimeForImmortal)
     {
-        if (Time.time < immortalTime)
-            timeBeforKick += TimeForImmortal;
+		if (Time.time < immortalTime) {
+			immortalityTime = TimeForImmortal;
+			timeBeforKick += TimeForImmortal;
+		}
         else
         {
+			immortalityTime = TimeForImmortal;
             timeBeforKick = Time.time + TimeForImmortal;
             StartCoroutine(ImmortalVisual());
         }
@@ -94,8 +102,11 @@ public class PlayerController : BasedGameObjects
     public IEnumerator ImmortalVisual ()
     {
         ImmortalVisualParticle.Play(true);
-        while (Time.time < timeBeforKick)
-            yield return null;
+		while (Time.time < timeBeforKick) {
+			progressBar.CurrentValue = 0;
+			yield return null;
+		}
         ImmortalVisualParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+
     }
 }
