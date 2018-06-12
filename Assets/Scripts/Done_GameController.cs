@@ -21,10 +21,6 @@ public class Done_GameController : MonoBehaviour
     public static Done_GameController Instance;
 	public float Xmin, Xmax;
 
-
-
-
-
     public GUIText scoreText;
 	public GUIText restartText;
 	public GUIText gameOverText;
@@ -55,7 +51,6 @@ public class Done_GameController : MonoBehaviour
 		gameOverText.text = "";
 		score = 0;
 		UpdateScore ();
-	//	UpdateHealth ();
 		Player.gameObject.SetActive (false);
 
         GOparant = new GameObject("GOparant").transform;

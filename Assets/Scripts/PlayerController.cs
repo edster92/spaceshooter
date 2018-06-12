@@ -80,10 +80,12 @@ public class PlayerController : BasedGameObjects
     }
 	public override void AddedGamage (float Damage)
     {
+		
         if (Time.time >= timeBeforKick)
         {
-            AddImmoratl(immortalTime);
 			HealthPoints -= Damage;
+			if (HealthPoints > 0)
+				AddImmoratl(immortalTime);
         }
     }
     public void AddImmoratl (float TimeForImmortal)
@@ -102,12 +104,13 @@ public class PlayerController : BasedGameObjects
     public IEnumerator ImmortalVisual ()
     {
         ImmortalVisualParticle.Play(true);
+		progressBar.icon.SetActive(true);
 		while (Time.time < timeBeforKick) {
 			progressBar.CurrentValue = (timeBeforKick - Time.time) / immortalityTime;
 			yield return null;
 		}
 		progressBar.CurrentValue = 0;
         ImmortalVisualParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-
+		progressBar.icon.SetActive (false);
     }
 }

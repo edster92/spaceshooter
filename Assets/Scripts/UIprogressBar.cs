@@ -21,6 +21,9 @@ public class UIprogressBar : MonoBehaviour {
 	Transform progressBar;
 
 
+	public GameObject icon;
+
+
 
 
 }
