@@ -24,6 +24,7 @@ public class Done_GameController : MonoBehaviour
     public GUIText scoreText;
 	public GUIText restartText;
 	public GUIText gameOverText;
+	public Text weaponLvlTxt;
 
     public GUIText HealthText;
 
@@ -94,6 +95,7 @@ public class Done_GameController : MonoBehaviour
 		StartCoroutine (SpawnWaves ());
 		StartCoroutine(SpawnBonus());
 		StartCoroutine (SpawnBomb ());
+		UpdateWeaponInfo ();
 	}
 
 
@@ -146,7 +148,11 @@ public class Done_GameController : MonoBehaviour
 		UpdateScore ();
 	}
 
-	
+	public void UpdateWeaponInfo ()
+	{
+		weaponLvlTxt.text = "Your weapon level: " + Player.Weapon.WeaponLevel;
+	}
+
 	void UpdateScore ()
 	{
 		scoreText.text = "Score: " + score;
@@ -197,8 +203,10 @@ public class Done_GameController : MonoBehaviour
 						Player.Weapon.FireStart ();
 				} else if (Player.Weapon.WeaponLevel == Player.Weapon.MaxWeaponLevel)
 					return;
-				else
+				else {
 					Player.Weapon.WeaponLevelsUp ();
+					UpdateWeaponInfo ();
+				}
 				break;
 			}
 		case BonusContainer.ChoseBonusType.GreatBaBah:
@@ -217,6 +225,7 @@ public class Done_GameController : MonoBehaviour
 		Quaternion spawnRotation = Quaternion.identity;
 		Instantiate (hazard, spawnPosition, spawnRotation, GOparant);
 	}
+
 	public void SpawnLaser ()
 	{
 		GameObject bonus = bonuses[Random.Range(0, bonuses.Length)];
@@ -224,18 +233,14 @@ public class Done_GameController : MonoBehaviour
 		Quaternion bonusSpawnRotation = Quaternion.identity;
 		Instantiate(bonus, bonuSpawnPosition, bonusSpawnRotation, GOparant);
 	}
-	public void SpawnSS ()
-	{
-	}
-	public void SpawnMS ()
-	{
-	}
+
 	public void SpawnBombss ()
 	{
 		Vector3 bombSpawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
 		Quaternion bombSpawnRotation = Quaternion.identity;
 		Instantiate (bomb, bombSpawnPosition, bombSpawnRotation, GOparant);
 	}
+
 	public void QuiyGame ()
 	{
 		Application.Quit ();
