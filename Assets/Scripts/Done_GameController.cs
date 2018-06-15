@@ -201,6 +201,7 @@ public class Done_GameController : MonoBehaviour
 					}
 					if (playerShoted == true)
 						Player.Weapon.FireStart ();
+					UpdateWeaponInfo ();
 				} else if (Player.Weapon.WeaponLevel == Player.Weapon.MaxWeaponLevel)
 					return;
 				else {

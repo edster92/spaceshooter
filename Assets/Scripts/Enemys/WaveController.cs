@@ -17,7 +17,7 @@ public class WaveController : MonoBehaviour {
 			while (true) {
 				if (timeToSpawn <= Time.time) {
 					int U = Random.Range (0, waves [i].WaveUnits.Count - 1);
-					// здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit 
+					// здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit, отдельным класом
 					waves [i].WaveUnits[U].unitQuantity--;
 					if (waves [i].WaveUnits [U].unitQuantity == 0)
 						waves [i].WaveUnits.RemoveAt (U);
