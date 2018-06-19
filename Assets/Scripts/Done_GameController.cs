@@ -8,6 +8,8 @@ using System.Xml.Serialization;
 public class Done_GameController : MonoBehaviour
 {
 	public event System.Action AllDead;
+	[SerializeField]
+	WaveController waveController;
 	public GameObject[] hazards;
     public GameObject[] bonuses;
 	[SerializeField]
@@ -96,6 +98,7 @@ public class Done_GameController : MonoBehaviour
 		StartCoroutine(SpawnBonus());
 		StartCoroutine (SpawnBomb ());
 		UpdateWeaponInfo ();
+		waveController.StartWaves ();
 	}
 
 
@@ -108,7 +111,7 @@ public class Done_GameController : MonoBehaviour
             {
                 GameObject hazard = hazards[Random.Range(0, hazards.Length)];
                 Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-                Quaternion spawnRotation = Quaternion.identity;
+                Quaternion spawnRotation =  Quaternion.identity;
 				Instantiate (hazard, spawnPosition, spawnRotation, GOparant);
                 yield return new WaitForSeconds(spawnWait);
             } 

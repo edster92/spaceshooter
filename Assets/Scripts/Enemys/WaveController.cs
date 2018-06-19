@@ -9,6 +9,14 @@ public class WaveController : MonoBehaviour {
 	[SerializeField]
 	List <Wave> waves = new List<Wave> ();
 	float timeToSpawn;
+	Transform GOparant1;
+	[SerializeField]
+	Vector3 spawnValues;
+
+	void Start ()
+	{
+		GOparant1 = new GameObject("GOparant1").transform;
+	}
 
 	IEnumerator wavesHandler ()
 	{
@@ -17,7 +25,11 @@ public class WaveController : MonoBehaviour {
 			while (true) {
 				if (timeToSpawn <= Time.time) {
 					int U = Random.Range (0, waves [i].WaveUnits.Count - 1);
-					// здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit, отдельным класом
+
+					Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+					Quaternion spawnRotation = Quaternion.identity;
+					Instantiate (waves [i].WaveUnits [U].unit, spawnPosition, spawnRotation); // здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit, отдельным класом
+
 					waves [i].WaveUnits[U].unitQuantity--;
 					if (waves [i].WaveUnits [U].unitQuantity == 0)
 						waves [i].WaveUnits.RemoveAt (U);
@@ -29,4 +41,17 @@ public class WaveController : MonoBehaviour {
 			}
 		}
 	}
+
+	public void StartWaves ()
+	{
+		StartCoroutine (wavesHandler ());
+	}
+
+
+//	public void SpawnUnit ()
+//	{
+//		Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+//		Quaternion spawnRotation = Quaternion.identity;
+//		Instantiate (waves [1].WaveUnits[1], spawnPosition, spawnRotation, GOparant);
+//	}
 }
