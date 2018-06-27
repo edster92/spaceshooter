@@ -125,6 +125,8 @@ public class Done_GameController : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(minTimeSpawnBonus, maxTimeSpawnBonus));
         while (true)
         {
+			if (bonuses.Length == 0)
+				break;
             GameObject bonus = bonuses[Random.Range(0, bonuses.Length)];
             Vector3 bonuSpawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
             Quaternion bonusSpawnRotation = Quaternion.identity;

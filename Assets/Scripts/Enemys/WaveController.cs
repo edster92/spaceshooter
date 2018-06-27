@@ -41,6 +41,7 @@ public class WaveController : MonoBehaviour {
 					
 				{
 					int U = Random.Range (0, waves [i].WaveUnits.Count - 1);
+
 					Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
 					Quaternion spawnRotation = Quaternion.identity;
 					Instantiate (waves [i].WaveUnits [U].unit, spawnPosition, spawnRotation); // здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit, отдельным класом
@@ -49,12 +50,19 @@ public class WaveController : MonoBehaviour {
 					if (waves [i].WaveUnits [U].unitQuantity == 0)
 						waves [i].WaveUnits.RemoveAt (U);
 
-					 if (waves [i].WaveUnits.Count == 0) {
+
+
+					if (waves [i].WaveUnits.Count <= 0) 
+					{
+						
+
+
 						Debug.Log ("NEXXXT");
 						txtNextLvl = true;
 						nextWaveText.gameObject.SetActive (true);
-						break;
+
 					}
+
 
 					timeToSpawn = Time.time + Random.Range (waves [i].minTimeSpawn, waves [i].maxTimeSpawn);
 				}
