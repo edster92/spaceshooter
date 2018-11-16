@@ -18,6 +18,10 @@ public class WaveController : MonoBehaviour {
 	bool txtNextLvl = false;
 	float alpha;
 	float timeForTxt = 3;
+    int indexCurrWave = 0;
+
+
+
 
 	void Start ()
 	{
@@ -44,7 +48,7 @@ public class WaveController : MonoBehaviour {
 
 					Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
 					Quaternion spawnRotation = Quaternion.identity;
-					Instantiate (waves [i].WaveUnits [U].unit, spawnPosition, spawnRotation); // здесь будем вызывать спаун U юнита "waves [i].waveUnit [U].unit, отдельным класом
+					Instantiate (waves [i].WaveUnits [U].unit, spawnPosition, spawnRotation); 
 
 					waves [i].WaveUnits[U].unitQuantity--;
 					if (waves [i].WaveUnits [U].unitQuantity == 0)
@@ -97,10 +101,24 @@ public class WaveController : MonoBehaviour {
 	}
 
 
-//	public void SpawnUnit ()
-//	{
-//		Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
-//		Quaternion spawnRotation = Quaternion.identity;
-//		Instantiate (waves [1].WaveUnits[1], spawnPosition, spawnRotation, GOparant);
-//	}
+    public void SpawnUnits(List<Units> currUnits )
+    {
+        
+    }
+
+
+    private void SpawnWave(Wave currWave )
+    {
+
+
+
+    }
+
+    private void SpawnObjects(Units unit )
+    {
+        Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+        Quaternion spawnRotation = Quaternion.identity;
+        Instantiate(unit.unit, spawnPosition, spawnRotation, GOparant1);
+    }
+
 }
