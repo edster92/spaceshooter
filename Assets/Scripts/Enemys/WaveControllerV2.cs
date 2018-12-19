@@ -28,10 +28,14 @@ public class WaveControllerV2 : MonoBehaviour {
 
     void Update ()
     {
-        if (state != SpawnState.SPAWNING)
+        if (waveCountDown <= 0)
         {
-            StartCoroutine(SpawnWave(waves[nextWave]));
+            if (state != SpawnState.SPAWNING)
+            {
+                StartCoroutine(SpawnWave(waves[nextWave]));
+            }
         }
+
         else
         {
             waveCountDown -= Time.deltaTime;
